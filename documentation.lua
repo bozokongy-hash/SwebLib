@@ -2,13 +2,11 @@
 
 ## Getting Started
 
-```lua
 local Library = loadstring(game:HttpGet("YOUR_URL_HERE"))()
 ```
 
 ## Key System
 
-```lua
 local keyPassed = Library:CreateKeySystem({
 	Key = "YourKey123",
 	DiscordLink = "discord.gg/yourlink",
@@ -22,7 +20,6 @@ if not keyPassed then return end
 
 ## Create Window
 
-```lua
 local Window = Library:CreateWindow({
 	Title = "Your Hub",
 	Subtitle = "Your Subtitle",
@@ -35,7 +32,6 @@ local Window = Library:CreateWindow({
 
 ## Create Pages
 
-```lua
 local Page1 = Window:CreatePage("Page Name")
 local Page2 = Window:CreatePage("Another Page")
 ```
@@ -44,7 +40,6 @@ local Page2 = Window:CreatePage("Another Page")
 
 ### Toggle
 
-```lua
 Window:CreateToggle({
 	Parent = Page1.Content,
 	Text = "Toggle Name",
@@ -57,7 +52,6 @@ Window:CreateToggle({
 
 ### Slider
 
-```lua
 Window:CreateSlider({
 	Parent = Page1.Content,
 	Text = "Slider Name",
@@ -72,7 +66,6 @@ Window:CreateSlider({
 
 ### Button
 
-```lua
 Window:CreateButton({
 	Parent = Page1.Content,
 	Text = "Button Name",
@@ -84,7 +77,6 @@ Window:CreateButton({
 
 ### Dropdown
 
-```lua
 Window:CreateDropdown({
 	Parent = Page1.Content,
 	Text = "Dropdown Name",
@@ -98,7 +90,6 @@ Window:CreateDropdown({
 
 ### Label
 
-```lua
 Window:CreateLabel({
 	Parent = Page1.Content,
 	Text = "This is a label"
