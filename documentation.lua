@@ -3,7 +3,7 @@
 ## Getting Started
 
 local Library = loadstring(game:HttpGet("YOUR_URL_HERE"))()
-```
+
 
 ## Key System
 
@@ -16,7 +16,7 @@ local keyPassed = Library:CreateKeySystem({
 })
 
 if not keyPassed then return end
-```
+
 
 ## Create Window
 
@@ -28,13 +28,12 @@ local Window = Library:CreateWindow({
 	ToggleKey = Enum.KeyCode.RightControl,
 	Size = UDim2.new(0, 700, 0, 480)
 })
-```
 
 ## Create Pages
 
 local Page1 = Window:CreatePage("Page Name")
 local Page2 = Window:CreatePage("Another Page")
-```
+
 
 ## Elements
 
@@ -48,7 +47,7 @@ Window:CreateToggle({
 		print(value)
 	end
 })
-```
+
 
 ### Slider
 
@@ -62,7 +61,7 @@ Window:CreateSlider({
 		print(value)
 	end
 })
-```
+
 
 ### Button
 
@@ -73,7 +72,7 @@ Window:CreateButton({
 		print("Button clicked!")
 	end
 })
-```
+
 
 ### Dropdown
 
@@ -86,7 +85,7 @@ Window:CreateDropdown({
 		print(value)
 	end
 })
-```
+
 
 ### Label
 
@@ -94,5 +93,3 @@ Window:CreateLabel({
 	Parent = Page1.Content,
 	Text = "This is a label"
 })
-```
-```
